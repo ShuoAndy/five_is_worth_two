@@ -44,7 +44,7 @@ theme:
         icon: material/weather-night
         name: Switch to light mode
   logo: assets/images/favicon.png
-  favicon: images/asyNc.png
+  favicon: assets/images/favicon.png
   language: zh
 
 extra:
