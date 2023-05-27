@@ -143,29 +143,27 @@
 | `ban` |无| 封禁用户 |
 
 ### TaskContent
-不同任务模板的组件
+不同任务模板的组件，用于需求方审核展示。
 
-#### Audio.vue
+所有的组件采用统一的数据和函数格式；index.vue作为入口自动选择component。
 
-#### Censor.vue
+#### *.vue
 
-#### Detect.vue
+| 参数名 | 含义 |
+| ------ | ---- |
+| `category` | 任务类型 |
+| `task_id`  | 任务id  |
+| `data_id`  | 当前展示的数据的编号 |
+| `thread_id?` | 标注方在本题中的序号；若不提供，则不拉取标注方作答 |
 
-#### Image.vue
+| 函数名 | 含义 |
+| ------ | ---- |
+| `updData` | 响应data_id的更新，从后端拉取新的数据 |
 
-#### index.vue
+#### partial/*.vue
 
-#### Keypoint.vue
+数据和函数格式与上一节相同，仅把可能多次使用的标签单独提取出来作为了一个新的模块。
 
-#### Text.vue
-
-#### Triple.vue
-
-#### Video.vue
-
-#### components/TaskContent/partial
-
-###### Anno.vue
 
 ## pages/
 页面
