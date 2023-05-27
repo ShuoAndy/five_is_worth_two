@@ -165,7 +165,8 @@
 
 #### components/TaskContent/partial
 
-##### Anno.vue
+######
+ Anno.vue
 
 ## pages/
 页面
@@ -178,7 +179,8 @@
 
 #### demander/
 
-##### EstablishTask.vue
+######
+ EstablishTask.vue
 
 需求方发布任务界面
 
@@ -201,7 +203,8 @@
 | `UpperFrame` |顶框 |
 | `TaskList` | 任务列表|
 
-##### checkTask/[id]/[thread_id].vue
+######
+ checkTask/[id]/[thread_id].vue
 
 需求方审核标注结果界面
 
@@ -212,7 +215,8 @@
 | `UpperFrame` |顶框 |
 | `TaskContent` |查看标注结果|
 
-##### ModifyTask/[id].vue
+######
+ ModifyTask/[id].vue
 
 需求方修改任务界面
 
@@ -226,7 +230,8 @@
 
 #### intermediary/
 
-##### main.vue
+######
+ main.vue
 
 中介主界面（获取所有任务）
 
@@ -237,7 +242,8 @@
 | `UpperFrame` |顶框 |
 | `Mediary` |任务列表|
 
-##### dotask/[id].vue
+######
+ dotask/[id].vue
 
 中介分发任务界面
 
@@ -257,7 +263,8 @@
 
 #### manager/
 
-##### audit.vue
+######
+ audit.vue
 
 管理员获取所有审核任务界面
 
@@ -268,7 +275,8 @@
 | `UpperFrame` |顶框 |
 | `AuditList` |任务列表|
 
-##### main.vue
+######
+ main.vue
 
 管理员主界面（审核举报）
 
@@ -279,7 +287,8 @@
 | `UpperFrame` |顶框 |
 | `ReportList` |任务列表|
 
-##### random.vue
+######
+ random.vue
 
 管理员审核任务界面
 
@@ -295,7 +304,8 @@
 | -------- | -------- | -------------------- |
 | `getdata` |无| 随机获取该任务的内容 |
 
-##### view.vue
+######
+ view.vue
 
 管理员封禁普通用户界面
 
@@ -308,7 +318,8 @@
 
 #### super_manager/
 
-##### main.vue
+######
+ main.vue
 
 管理员主界面（封禁用户）
 
@@ -321,7 +332,8 @@
 
 #### worker/
 
-##### main.vue
+######
+ main.vue
 
 标注方主界面（获取任务）
 
@@ -332,7 +344,8 @@
 | `UpperFrame` |顶框 |
 | `PreferForm` | 喜好表|
 
-##### mytask.vue
+######
+ mytask.vue
 
 标注方获取所有任务界面
 
@@ -343,7 +356,8 @@
 | `UpperFrame` |顶框 |
 | `TaskList` |任务列表|
 
-##### dotask/[id].vue
+######
+ dotask/[id].vue
 
 标注方做所有任务界面
 
