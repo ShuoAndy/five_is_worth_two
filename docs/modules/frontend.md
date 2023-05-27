@@ -1,4 +1,4 @@
-## components/
+# components/
 组件
 
 ### AuditList.vue
@@ -167,7 +167,7 @@
 
 ##### Anno.vue
 
-## pages/
+# pages/
 页面
 
 ### index.vue
@@ -184,11 +184,11 @@
 
 **components**
 
-| 组件名   |
-| --------- |
-| `UpperFrame` |
-| `TaskPost` |
-| `FilePost` |
+| 组件名   | 功能 |
+| --------- | --------- |
+| `UpperFrame` | 顶框 |
+| `TaskPost` | 上传任务信息|
+| `FilePost` | 上传任务文件|
 
 ##### main.vue
 
@@ -196,10 +196,10 @@
 
 **components**
 
-| 组件名   |
-| --------- |
-| `UpperFrame` |
-| `TaskList` |
+| 组件名   | 功能|
+| --------- | --------- |
+| `UpperFrame` |顶框 |
+| `TaskList` | 任务列表|
 
 ##### checkTask/[id]/[thread_id].vue
 
@@ -207,10 +207,10 @@
 
 **components**
 
-| 组件名   |
-| --------- |
-| `UpperFrame` |
-| `TaskContent` |
+| 组件名   |功能|
+| --------- | --------- |
+| `UpperFrame` |顶框 |
+| `TaskContent` |查看标注结果|
 
 ##### ModifyTask/[id].vue
 
@@ -218,11 +218,11 @@
 
 **components**
 
-| 组件名   |
-| --------- |
-| `UpperFrame` |
-| `TaskPost` |
-| `FilePost` |
+| 组件名   |功能|
+| --------- |--------- |
+| `UpperFrame` |顶框 |
+| `TaskPost` |上传任务信息|
+| `FilePost` |上传任务文件|
 
 #### intermediary/
 
@@ -232,10 +232,10 @@
 
 **components**
 
-| 组件名   |
-| --------- |
-| `UpperFrame` |
-| `Mediary` |
+| 组件名   |功能|
+| --------- |--------- |
+| `UpperFrame` |顶框 |
+| `Mediary` |任务列表|
 
 ##### dotask/[id].vue
 
@@ -243,10 +243,10 @@
 
 **components**
 
-| 组件名   |
-| --------- |
-| `Loading` |
-| `UpperFrame` |
+| 组件名   |功能|
+| --------- |--------- |
+| `Loading` |加载界面|
+| `UpperFrame` |顶框 |
 
 **methods**
 
@@ -263,10 +263,10 @@
 
 **components**
 
-| 组件名   |
-| --------- |
-| `UpperFrame` |
-| `AuditList` |
+| 组件名   |功能|
+| --------- |--------- |
+| `UpperFrame` |顶框 |
+| `AuditList` |任务列表|
 
 ##### main.vue
 
@@ -274,10 +274,10 @@
 
 **components**
 
-| 组件名   |
-| --------- |
-| `UpperFrame` |
-| `ReportList` |
+| 组件名   |功能|
+| --------- |--------- |
+| `UpperFrame` |顶框 |
+| `ReportList` |任务列表|
 
 ##### random.vue
 
@@ -285,9 +285,9 @@
 
 **components**
 
-| 组件名   |
-| --------- |
-| `UpperFrame` |
+| 组件名   |功能|
+| --------- |--------- |
+| `UpperFrame` |顶框 |
 
 **methods**
 
@@ -301,10 +301,10 @@
 
 **components**
 
-| 组件名   |
-| --------- |
-| `UpperFrame` |
-| `ViewList` |
+| 组件名   |功能|
+| --------- |--------- |
+| `UpperFrame` |顶框 |
+| `ViewList` |用户列表|
 
 #### super_manager/
 
@@ -314,10 +314,10 @@
 
 **components**
 
-| 组件名   |
-| --------- |
-| `UpperFrame` |
-| `ViewList` |
+| 组件名   |功能|
+| --------- |--------- |
+| `UpperFrame` |顶框 |
+| `ViewList` |用户列表|
 
 #### worker/
 
@@ -327,10 +327,10 @@
 
 **components**
 
-| 组件名   |
-| --------- |
-| `UpperFrame` |
-| `PreferForm` |
+| 组件名   |功能|
+| --------- |--------- |
+| `UpperFrame` |顶框 |
+| `PreferForm` | 喜好表|
 
 ##### mytask.vue
 
@@ -338,10 +338,10 @@
 
 **components**
 
-| 组件名   |
-| --------- |
-| `UpperFrame` |
-| `TaskList` |
+| 组件名   |功能|
+| --------- |--------- |
+| `UpperFrame` |顶框 |
+| `TaskList` |任务列表|
 
 ##### dotask/[id].vue
 
@@ -349,10 +349,10 @@
 
 **components**
 
-| 组件名   |
-| --------- |
-| `UpperFrame` |
-| `DataPost` |
+| 组件名   |功能|
+| --------- |--------- |
+| `UpperFrame` |顶框 |
+| `DataPost` |做题|
 
 #### info.vue
 
@@ -360,10 +360,10 @@
 
 **components**
 
-| 组件名   |
-| --------- |
-| `Loading` |
-| `UpperFrame` |
+| 组件名   |功能|
+| --------- |--------- |
+| `Loading` |加载界面|
+| `UpperFrame` |顶框 |
 
 #### leaderboard.vue
 
@@ -371,20 +371,20 @@
 
 **components**
 
-| 组件名   |
-| --------- |
-| `LeaderBoard` |
+| 组件名   |功能|
+| --------- |--------- |
+| `LeaderBoard` |排行榜|
 
 #### login.vue
 
 登录界面
 
-| 组件名   |
-| --------- |
-| `Loading` |
-| `HeaderCard` |
-| `LoginCard` |
-| `LeaderBoard` |
+| 组件名   |功能|
+| --------- |--------- |
+| `Loading` |加载界面|
+| `HeaderCard` |顶框 |
+| `LoginCard` |登录表|
+| `LeaderBoard` |排行榜|
 
 #### password_reset.vue
 
@@ -401,20 +401,20 @@
 
 注册界面
 
-| 组件名   |
-| --------- |
-| `Loading` |
-| `HeaderCard` |
-| `LoginCard` |
-| `LeaderBoard` |
+| 组件名   |功能|
+| --------- |--------- |
+| `Loading` |加载界面|
+| `HeaderCard` |顶框 |
+| `LoginCard` |注册表|
+| `LeaderBoard` |排行榜|
 
 #### report.vue
 
 举报界面
 
-| 组件名   |
-| --------- |
-| `UpperFrame` |
+| 组件名   |功能|
+| --------- |--------- |
+| `UpperFrame` |顶框 |
 
 **methods**
 
