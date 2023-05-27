@@ -54,7 +54,25 @@
     - 查看任务详情
     - 查看标注方并进行任务分配
 
-### 需求用例
+### 需求分析
 
+#### 用户用例图
+
+![需求方用例图](images/demander.jpg)
+<center>需求方用例图</center>
+
+![标注方用例图](images/worker.jpg)
+<center>标注方用例图</center>
+
+![中介方用例图](images/mediary.jpg)
+<center>中介方用例图</center>
+
+![标注方用例图](images/manager.jpg)
+<center>管理员用例图</center>
+
+![中介方用例图](images/super.jpg)
+<center>超级管理员用例图</center>
+
+#### 泳道图流程展示
 
 ![哈哈](images/f31af65b6ce0bcda9528c60a968a8bc.jpg)
