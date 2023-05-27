@@ -1,4 +1,4 @@
-# components/
+## components/
 组件
 
 ### AuditList.vue
@@ -167,7 +167,7 @@
 
 ##### Anno.vue
 
-# pages/
+## pages/
 页面
 
 ### index.vue
@@ -190,7 +190,7 @@
 | `TaskPost` | 上传任务信息|
 | `FilePost` | 上传任务文件|
 
-##### main.vue
+###### main.vue
 
 需求方主界面（获取所有任务）
 
