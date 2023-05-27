@@ -18,7 +18,7 @@
 
 **methods**
 
-| 方法名  |参数| 功能           |
+| 函数名  |参数| 功能           |
 | -------- | -------- | -------------------- |
 | `getdata` |无| 获取该题信息 |
 | `getcontent` |无| 获取该题所有文字信息，用于文字预览 |
@@ -34,7 +34,7 @@
 
 **methods**
 
-| 方法名  |参数| 功能           |
+| 函数名  |参数| 功能           |
 | -------- | -------- | -------------------- |
 | `submit` |无| 提交文件并提示上传速度 |
 
@@ -48,7 +48,7 @@
 
 **methods**
 
-| 方法名  |参数| 功能           |
+| 函数名  |参数| 功能           |
 | -------- | -------- | -------------------- |
 | `getleaderList` |无| 获取前十名标注方 |
 
@@ -73,7 +73,7 @@
 
 **methods**
 
-| 方法名  |参数| 功能           |
+| 函数名  |参数| 功能           |
 | -------- | -------- | -------------------- |
 | `submit` |无| 实现注册/登录，并对密码进行sha256加密 |
 
@@ -87,7 +87,7 @@
 
 **methods**
 
-| 方法名  |参数| 功能           |
+| 函数名  |参数| 功能           |
 | -------- | -------- | -------------------- |
 | `getTasksList` |无| 获取新的任务并根据preferform进行过滤 |
 | `accept` |无| 接受任务 |
@@ -127,11 +127,11 @@
 
 ### ViewList.vue
 
-超管组件
+超级管理员/管理员组件
 
 **methods**
 
-| 方法名  |参数| 功能           |
+| 函数名  |参数| 功能           |
 | -------- | -------- | -------------------- |
 | `newcard` |无| 创建银行卡 |
 | `deletecard` |无| 删除银行卡 |
@@ -139,8 +139,10 @@
 | `deposit` |无| 修改银行卡余额 |
 | `notice` |无| 发布公告 |
 | `deletenotice` |无| 根据ID删除公告 |
+| `pass` |无| 解禁用户 |
+| `ban` |无| 封禁用户 |
 
-### components/TaskContent
+### TaskContent
 不同任务模板的组件
 
 #### Audio.vue
@@ -172,26 +174,249 @@
 
 默认位于登录界面
 
-### pages/users
+### users/
 
-#### pages/users/demander
+#### demander/
 
-#### pages/users/intermediary
+##### EstablishTask.vue
 
-#### pages/users/manager
+需求方发布任务界面
 
-#### pages/users/super_manager
+**components**
 
-#### pages/users/worker
+| 组件名   |
+| --------- |
+| `UpperFrame` |
+| `TaskPost` |
+| `FilePost` |
+
+##### main.vue
+
+需求方主界面（获取所有任务）
+
+**components**
+
+| 组件名   |
+| --------- |
+| `UpperFrame` |
+| `TaskList` |
+
+##### checkTask/[id]/[thread_id].vue
+
+需求方审核标注结果界面
+
+**components**
+
+| 组件名   |
+| --------- |
+| `UpperFrame` |
+| `TaskContent` |
+
+##### ModifyTask/[id].vue
+
+需求方修改任务界面
+
+**components**
+
+| 组件名   |
+| --------- |
+| `UpperFrame` |
+| `TaskPost` |
+| `FilePost` |
+
+#### intermediary/
+
+##### main.vue
+
+中介主界面（获取所有任务）
+
+**components**
+
+| 组件名   |
+| --------- |
+| `UpperFrame` |
+| `Mediary` |
+
+##### dotask/[id].vue
+
+中介分发任务界面
+
+**components**
+
+| 组件名   |
+| --------- |
+| `Loading` |
+| `UpperFrame` |
+
+**methods**
+
+| 函数名  |参数| 功能           |
+| -------- | -------- | -------------------- |
+| `getTasksList` |无| 获取分发任务 |
+| `submit` |无| 分发任务 |
+
+#### manager/
+
+##### audit.vue
+
+管理员获取所有审核任务界面
+
+**components**
+
+| 组件名   |
+| --------- |
+| `UpperFrame` |
+| `AuditList` |
+
+##### main.vue
+
+管理员主界面（审核举报）
+
+**components**
+
+| 组件名   |
+| --------- |
+| `UpperFrame` |
+| `ReportList` |
+
+##### random.vue
+
+管理员审核任务界面
+
+**components**
+
+| 组件名   |
+| --------- |
+| `UpperFrame` |
+
+**methods**
+
+| 函数名  |参数| 功能           |
+| -------- | -------- | -------------------- |
+| `getdata` |无| 随机获取该任务的内容 |
+
+##### view.vue
+
+管理员封禁普通用户界面
+
+**components**
+
+| 组件名   |
+| --------- |
+| `UpperFrame` |
+| `ViewList` |
+
+#### super_manager/
+
+##### main.vue
+
+管理员主界面（封禁用户）
+
+**components**
+
+| 组件名   |
+| --------- |
+| `UpperFrame` |
+| `ViewList` |
+
+#### worker/
+
+##### main.vue
+
+标注方主界面（获取任务）
+
+**components**
+
+| 组件名   |
+| --------- |
+| `UpperFrame` |
+| `PreferForm` |
+
+##### mytask.vue
+
+标注方获取所有任务界面
+
+**components**
+
+| 组件名   |
+| --------- |
+| `UpperFrame` |
+| `TaskList` |
+
+##### dotask/[id].vue
+
+标注方做所有任务界面
+
+**components**
+
+| 组件名   |
+| --------- |
+| `UpperFrame` |
+| `DataPost` |
 
 #### info.vue
 
+个人信息页面
+
+**components**
+
+| 组件名   |
+| --------- |
+| `Loading` |
+| `UpperFrame` |
+
 #### leaderboard.vue
+
+排行榜界面
+
+**components**
+
+| 组件名   |
+| --------- |
+| `LeaderBoard` |
 
 #### login.vue
 
+登录界面
+
+| 组件名   |
+| --------- |
+| `Loading` |
+| `HeaderCard` |
+| `LoginCard` |
+| `LeaderBoard` |
+
 #### password_reset.vue
+
+通过邮箱重置密码界面
+
+**methods**
+
+| 函数名  |参数| 功能           |
+| -------- | -------- | -------------------- |
+| `getCode` |无| 发送验证码 |
+| `submit` |`formRef`| 重置密码 |
 
 #### register.vue
 
+注册界面
+
+| 组件名   |
+| --------- |
+| `Loading` |
+| `HeaderCard` |
+| `LoginCard` |
+| `LeaderBoard` |
+
 #### report.vue
+
+举报界面
+
+| 组件名   |
+| --------- |
+| `UpperFrame` |
+
+**methods**
+
+| 函数名  |参数| 功能           |
+| `submit` |无| 提交举报 |
