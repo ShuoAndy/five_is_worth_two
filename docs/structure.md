@@ -67,4 +67,4 @@
 
 ### 系统模块图
 
-![系统结构图](images/struct.jpg)
+![系统结构图](images/struct.png)
