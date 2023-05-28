@@ -64,3 +64,7 @@
 - 举报信息模型 Report
 - 公告模型 Notice
 - 银行卡模型 Bankcard
+
+### 系统模块图
+
+![系统结构图](images/struct.jpg)
